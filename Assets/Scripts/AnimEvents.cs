@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 ///<summary>
 ///<para>Scene:All/NameOfScene/NameOfScene1,NameOfScene2,NameOfScene3...</para>
@@ -12,7 +13,7 @@ public class AnimEvents : MonoBehaviour {
 
 	public void LoadScene()
 	{
-		Application.LoadLevel("Loading");
+		SceneManager.LoadScene("Loading");
 	}
 
 	public void PlayButtonClickSound(bool playButtonSound)

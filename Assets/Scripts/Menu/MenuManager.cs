@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /**
   * Scene:All
@@ -32,7 +33,7 @@ public class MenuManager : MonoBehaviour
 	
 	void Start () 
 	{
-		if(Application.loadedLevelName=="MainScene")
+		if(SceneManager.GetActiveScene().name=="MainScene")
 		{
 			crossPromotionInterstitial = GameObject.Find("PopUps/PopUpInterstitial");
 			ratePopUp = GameObject.Find("PopUps/PopUpRate");
@@ -46,7 +47,7 @@ public class MenuManager : MonoBehaviour
 			}
 		}
 		
-		if(Application.loadedLevelName != "MapScene")
+		if(SceneManager.GetActiveScene().name != "MapScene")
 			ShowMenu(currentMenu.gameObject);
 			
 		popupOpened = false;
@@ -92,7 +93,7 @@ public class MenuManager : MonoBehaviour
 	{
 		if (levelName != "") {
 			try {
-//				if (levelName == "MainScene" && Application.loadedLevelName == "CharacterSelect")
+//				if (levelName == "MainScene" && SceneManager.GetActiveScene().name == "CharacterSelect")
 //					GlobalVariables.playLoadingDepart = false;
 				Application.LoadLevel (levelName);
 			} catch (System.Exception e) {
@@ -251,7 +252,7 @@ public class MenuManager : MonoBehaviour
 			popupFullyOpened = false;
 //		}
 
-		if (Application.loadedLevelName == "HospitalSelect")
+		if (SceneManager.GetActiveScene().name == "HospitalSelect")
 			GameObject.Find("BackButton").GetComponent<Button>().enabled = true;
 
 		menu.SetActive (false);
@@ -349,21 +350,21 @@ public class MenuManager : MonoBehaviour
 	void Update()
 	{
 		// Check exit interstitial
-		if (Input.GetKeyDown(KeyCode.Escape) && Application.loadedLevel == 2 && !popupOpened && !startInterstitialOpened)
+		if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex == 2 && !popupOpened && !startInterstitialOpened)
 			Application.Quit();
 
-		if (Input.GetKeyDown(KeyCode.Escape) && !popupOpened && Application.loadedLevel == 3)
+		if (Input.GetKeyDown(KeyCode.Escape) && !popupOpened && SceneManager.GetActiveScene().buildIndex == 3)
 		{
 			LevelManager.levelManager.PauseGame();
 		}
-		else if (Input.GetKeyDown(KeyCode.Escape) && popupOpened && popupFullyOpened && Application.loadedLevel != 3)
+		else if (Input.GetKeyDown(KeyCode.Escape) && popupOpened && popupFullyOpened && SceneManager.GetActiveScene().buildIndex != 3)
         {
             ClosePopUpMenu(currentPopUpMenu.gameObject);
 		}
-		else if (Input.GetKeyDown(KeyCode.Escape) && popupOpened && Application.loadedLevel == 3)
+		else if (Input.GetKeyDown(KeyCode.Escape) && popupOpened && SceneManager.GetActiveScene().buildIndex == 3)
 			LevelManager.levelManager.ContinueGame();
 
-		if (Input.GetKeyDown(KeyCode.Escape) && Application.loadedLevel == 2 && startInterstitialOpened)
+		if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex == 2 && startInterstitialOpened)
 		{
 			startInterstitialOpened = false;
 			ClosePopUpMenu(disabledObjects[2]);
@@ -372,7 +373,7 @@ public class MenuManager : MonoBehaviour
 
 	public void OpenLevelScene(string levelName)
 	{
-		Application.LoadLevel(levelName);
+		SceneManager.LoadScene(levelName);
 	}
 
 	// Play button click sound
@@ -394,7 +395,7 @@ public class MenuManager : MonoBehaviour
 			// Play loading scene arrive animation
 			loadingHolder.transform.GetChild(0).GetComponent<Animator>().Play("LoadingArriving", 0, 0);
 			yield return new WaitForSeconds (2f);
-			Application.LoadLevel(sceneName);
+			SceneManager.LoadScene(sceneName);
 		}
 	}
 
@@ -418,7 +419,7 @@ public class MenuManager : MonoBehaviour
 	public void PlayButtonPressed()
 	{
 		loadingHolder.GetComponent<CanvasGroup>().blocksRaycasts = true;
-		Application.LoadLevel("Level");
+		SceneManager.LoadScene("Level");
 	}
 
 	public void AtemptToBuyInapp(string sku) {}

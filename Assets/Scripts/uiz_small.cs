@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,7 +24,7 @@ public class uiz_small : MonoBehaviour
 
     }
     public void _btn_pindah(string kk){
-        this.gameObject.active = true ;
+        this.gameObject.SetActive(true);
         Music_Singleton.Instance.s_play(0);
         Scene_Name = kk;
         GetComponent<Animator>().Play("end");

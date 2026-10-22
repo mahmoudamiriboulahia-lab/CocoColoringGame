@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -198,16 +198,16 @@ public class GameSystem : MonoBehaviour
     }
 
     public void Show_UI(int i){
-        Uinya[i].active = true;
+        Uinya[i].SetActive(true);
     }
 
     public void btn_Paused(){
-        Uinya[1].active = true ;
+        Uinya[1].SetActive(true);
         GameActive = false ;
     }
 
     public void btn_Resumed(){
-        Uinya[1].active =false ;
+        Uinya[1].SetActive(false);
         GameActive = true ;
     }
 
@@ -303,7 +303,7 @@ public class GameSystem : MonoBehaviour
         if(Data_Timer <= 0 && !GameFinish){
             GameFinish = true ;
             uiz_small.Scene_Name = "Home";
-            Uinya[0].active = true ;
+            Uinya[0].SetActive(true);
             Music_Singleton.Instance.s_play(4);
 
             int data = PlayerPrefs.GetInt("score"+SceneManager.GetActiveScene().name);

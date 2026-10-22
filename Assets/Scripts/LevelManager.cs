@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 ///<summary>
 ///<para>Scene:All/NameOfScene/NameOfScene1,NameOfScene2,NameOfScene3...</para>
@@ -297,7 +298,7 @@ public class LevelManager : MonoBehaviour {
 		Time.timeScale = 1f;
 
 	
-		Application.LoadLevel("SelectGame");
+		SceneManager.LoadScene("SelectGame");
 	}
 
 	

@@ -7,19 +7,13 @@ public class AdsManager : MonoBehaviour
 {
     public static AdsManager instance;
 
-    // Test App ID: ca-app-pub-3940256099942544~3347511713
+    // iOS Ad Unit IDs
 
     const string iosTestAdMobIdInter  = "ca-app-pub-3940256099942544/4411468910";
     const string iosTestAdMobIdReward = "ca-app-pub-3940256099942544/1712485313";
 
-    const string androidTestAdMobIdInter  = "ca-app-pub-3940256099942544/1033173712";
-    const string androidTestAdMobIdReward = "ca-app-pub-3940256099942544/5224354917";
-
-    const string iosRealAdMobIdInter  = "ca-app-pub-8345838164321650/5292567110";
-    const string iosRealAdMobIdReward = "ca-app-pub-8345838164321650/3979485446";
-
-    const string androidRealAdMobIdInter  = "ca-app-pub-8345838164321650/3858103154";
-    const string androidRealAdMobIdReward = "ca-app-pub-8345838164321650/9611226359";
+    const string iosRealAdMobIdInter  = "ca-app-pub-8345838164321650/9812757826";
+    const string iosRealAdMobIdReward = "ca-app-pub-8345838164321650/9957982079";
 
     string _adMobIdInter;
     string _adMobIdReward;
@@ -45,28 +39,14 @@ public class AdsManager : MonoBehaviour
 
     public void SetUnitsIDs()
     {
-#if UNITY_ANDROID
-            if(_useTestAds){
-                _adMobIdInter  = androidTestAdMobIdInter;
-                _adMobIdReward = androidTestAdMobIdReward;
-            }
-            else {
-                _adMobIdInter  = androidRealAdMobIdInter;
-                _adMobIdReward = androidRealAdMobIdReward;
-            }
-#elif UNITY_IPHONE
-            if(_useTestAds){
-                _adMobIdInter  = iosTestAdMobIdInter;
-                _adMobIdReward = iosTestAdMobIdReward;
-            }
-            else {
-                _adMobIdInter  = iosRealAdMobIdInter;
-                _adMobIdReward = iosRealAdMobIdReward;
-            }
-#else
-            _adMobIdInter  = "unused";
-            _adMobIdReward = "unused";
-#endif
+        if (_useTestAds){
+            _adMobIdInter  = iosTestAdMobIdInter;
+            _adMobIdReward = iosTestAdMobIdReward;
+        }
+        else {
+            _adMobIdInter  = iosRealAdMobIdInter;
+            _adMobIdReward = iosRealAdMobIdReward;
+        }
     }
 
     public void AdMobInitializeAds()

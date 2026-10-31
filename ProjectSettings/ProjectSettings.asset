@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: AMIRIBOULAHIA
-  productName: Girl Cozy Coloring
+  productName: Coco Coloring
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -168,11 +168,11 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.DefaultCompany.Coloring
     Standalone: com.DefaultCompany.2DProject
-    iPhone: com.macfree.halloweencuties
+    iPhone: com.mahmoudamiri.cococoloring
   buildNumber:
     Standalone: 0
     VisionOS: 0
-    iPhone: 3
+    iPhone: 1
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
@@ -400,119 +400,115 @@ PlayerSettings:
   - m_BuildTarget: iPhone
     m_Icons:
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
-      m_Width: 180
-      m_Height: 180
-      m_Kind: 0
-      m_SubKind: iPhone
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 4
+      m_SubKind: App Store
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
-      m_Width: 120
-      m_Height: 120
-      m_Kind: 0
-      m_SubKind: iPhone
-    - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
-      m_Width: 167
-      m_Height: 167
-      m_Kind: 0
-      m_SubKind: iPad
-    - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
-      m_Width: 152
-      m_Height: 152
-      m_Kind: 0
-      m_SubKind: iPad
-    - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
-      m_Width: 76
-      m_Height: 76
-      m_Kind: 0
-      m_SubKind: iPad
-    - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 120
       m_Height: 120
       m_Kind: 3
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 80
       m_Height: 80
       m_Kind: 3
       m_SubKind: iPhone
-    - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+    - m_Textures: []
       m_Width: 80
       m_Height: 80
       m_Kind: 3
       m_SubKind: iPad
-    - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+    - m_Textures: []
       m_Width: 40
       m_Height: 40
       m_Kind: 3
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 87
       m_Height: 87
       m_Kind: 1
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 58
       m_Height: 58
       m_Kind: 1
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 29
       m_Height: 29
       m_Kind: 1
       m_SubKind: iPhone
-    - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+    - m_Textures: []
       m_Width: 58
       m_Height: 58
       m_Kind: 1
       m_SubKind: iPad
-    - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+    - m_Textures: []
       m_Width: 29
       m_Height: 29
       m_Kind: 1
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 60
       m_Height: 60
       m_Kind: 2
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 40
       m_Height: 40
       m_Kind: 2
       m_SubKind: iPhone
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 40
       m_Height: 40
       m_Kind: 2
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
       m_Width: 20
       m_Height: 20
       m_Kind: 2
       m_SubKind: iPad
     - m_Textures:
-      - {fileID: 2800000, guid: e4a28d912b2922c4a92e6b044da93c58, type: 3}
-      m_Width: 1024
-      m_Height: 1024
-      m_Kind: 4
-      m_SubKind: App Store
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
+      m_Width: 180
+      m_Height: 180
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
+      m_Width: 167
+      m_Height: 167
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
+      m_Width: 152
+      m_Height: 152
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: 79b0c1cafd0acf445b09907bae85e84e, type: 3}
+      m_Width: 76
+      m_Height: 76
+      m_Kind: 0
+      m_SubKind: iPad
   m_BuildTargetBatching: []
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs:
@@ -990,10 +986,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 494e6808-4fff-4eb0-91d8-84b6cabae242
+  cloudProjectId: a81cb134-d196-4246-a618-181a312b5a0d
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Halloween Cuties
+  projectName: CococoloringGame 2026-10-31_17-38-12
   organizationId: unity_3c741d0c1bb685dac2c5
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

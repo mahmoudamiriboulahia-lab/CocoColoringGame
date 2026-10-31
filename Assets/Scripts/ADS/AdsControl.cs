@@ -58,17 +58,9 @@ public class AdsControl : MonoBehaviour
 
 
 
-    // These ad units are configured to always serve test ads.
-#if UNITY_ANDROID
-  private string _adUnitId ="unused";
-  private const string _adUnitIdrewarded ="unused";
-#elif UNITY_IPHONE
-    private string _adUnitId = "ca-app-pub-8345838164321650/5292567110";
-    private const string _adUnitIdrewarded = "ca-app-pub-8345838164321650/3979485446";
-#else
-  private string _adUnitId = "unused";
-  private const string _adUnitIdrewarded = "unused";
-#endif
+    // iOS Ad Unit IDs
+    private string _adUnitId = "ca-app-pub-8345838164321650/9812757826";
+    private const string _adUnitIdrewarded = "ca-app-pub-8345838164321650/9957982079";
 
 
 
